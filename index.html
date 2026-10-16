@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bowen Wu is a Computer Science student at UC San Diego who builds full-stack web apps.">
+  <meta name="author" content="Bowen Wu">
+  <title>Home | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h1 id="intro-heading">Hi, I’m Bowen.</h1>
+      <p>I’m a Computer Science student at <strong>UC San Diego</strong> who likes building full-stack apps, from the database schema all the way to the screen you tap.</p>
+      <picture>
+        <source srcset="images/headshot.webp" type="image/webp">
+        <img src="images/headshot.jpg" alt="Portrait of Bowen Wu" width="240" height="240">
+      </picture>
+      <p>
+        <a href="projects.html">See my projects</a> or
+        <a href="resume.pdf" type="application/pdf">download my résumé (PDF)</a>.
+      </p>
+      <noscript>
+        <p>JavaScript is turned off. That’s fine: everything on this site works without it.</p>
+      </noscript>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured projects</h2>
+
+      <article>
+        <h3><a href="projects/bioloop.html">BioLoop</a></h3>
+        <p>A nutrition and health tracking app that started as a quick Streamlit prototype and grew into a full web stack.</p>
+        <tech-stack>
+          <span>FastAPI</span> <span>React</span> <span>TypeScript</span> <span>PostgreSQL</span> <span>Gemini</span>
+        </tech-stack>
+      </article>
+
+      <article>
+        <h3><a href="projects/habit-tracker.html">Habit Tracker</a></h3>
+        <p>A full-stack app for building habits and keeping track of them day by day.</p>
+      </article>
+
+      <article>
+        <h3><a href="projects/memebro.html">MemeBro</a></h3>
+        <p>An AI-powered meme generator.</p>
+      </article>
+
+      <p><a href="projects.html">All projects and coursework</a></p>
+    </section>
+
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">A bit about me</h2>
+      <p>I transferred to UCSD from Mt. San Antonio College, where I was president of the Computer Science Club. Before that I tutored K–6 math and worked the line at Chipotle, so I’m used to explaining things clearly and working fast with a team.</p>
+      <p><a href="about.html">More about me</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

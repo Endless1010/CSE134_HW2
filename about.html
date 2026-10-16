@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Bowen Wu: transfer student, CS Club president, math tutor, and full-stack developer.">
+  <meta name="author" content="Bowen Wu">
+  <title>About | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About me</h1>
+
+    <section aria-labelledby="story-heading">
+      <h2 id="story-heading">My story</h2>
+      <picture>
+        <source srcset="images/headshot.webp" type="image/webp">
+        <img src="images/headshot.jpg" alt="Portrait of Bowen Wu" width="200" height="200">
+      </picture>
+      <!-- TODO: rewrite these paragraphs in your own words -->
+      <p>I got into programming because I liked solving puzzles, and I still do: I spend some of my free time on algorithm problems just for fun.</p>
+      <p>I started my degree at Mt. San Antonio College and transferred to <strong>UC San Diego</strong>, where I study Computer Science. These days I’m most interested in building <em>complete</em> products, not just the backend or the frontend, but how the whole thing fits together.</p>
+      <p>I’m looking for software engineering internships and part-time roles where I can ship real features and learn from experienced engineers.</p>
+    </section>
+
+    <section aria-labelledby="path-heading">
+      <h2 id="path-heading">My path so far</h2>
+      <ol>
+        <li>Started Computer Science at Mt. San Antonio College.</li>
+        <li>Became president of the Mt. SAC Computer Science Club.</li>
+        <li>Transferred to UC San Diego.</li>
+        <li>Built BioLoop, a habit tracker, and MemeBro alongside my coursework.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching and leadership</h2>
+      <article>
+        <h3>Running the CS Club</h3>
+        <p>As club president I organized events and helped newer students find their footing in programming. <!-- TODO: add a specific event or result --></p>
+      </article>
+      <article>
+        <h3>Tutoring K–6 math</h3>
+        <p>Teaching math to young kids taught me that if I can’t explain something simply, I don’t understand it well enough yet. I bring that habit to code reviews and documentation.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="outside-heading">
+      <h2 id="outside-heading">Outside of code</h2>
+      <p>When I’m away from the keyboard I’m usually lifting, running, or climbing.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Custom element #1: <tech-stack>
+   A semantic wrapper for the list of technologies used in a project.
+   Per HW2 rules, CSS inside selectors specific to this element does not
+   count toward the styling limit. */
+tech-stack {
+  display: block;
+  margin: 0.75em 0;
+}
+
+tech-stack > span {
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.1em 0.5em;
+  margin: 0.15em 0.25em 0.15em 0;
+}

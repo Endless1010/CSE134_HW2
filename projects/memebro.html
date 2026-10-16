@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: MemeBro, a project by Bowen Wu.">
+  <meta name="author" content="Bowen Wu">
+  <title>MemeBro | Bowen Wu</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="../js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="../index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../projects.html" aria-current="page">Projects</a></li>
+        <li><a href="../experience.html">Experience</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="Breadcrumb">
+      <p><a href="../projects.html">Projects</a> / MemeBro</p>
+    </nav>
+
+    <article>
+      <header>
+        <h1>MemeBro</h1>
+        <p>An AI-powered meme generator.</p>
+        <!-- TODO: add <tech-stack> with the technologies you used, plus GitHub / demo links -->
+      </header>
+
+      <section aria-labelledby="problem-heading">
+        <h2 id="problem-heading">The problem</h2>
+        <p>[What problem this project solves and why I built it.]</p>
+      </section>
+
+      <section aria-labelledby="built-heading">
+        <h2 id="built-heading">What I built</h2>
+        <p>[The main features and my role.]</p>
+      </section>
+
+      <section aria-labelledby="how-heading">
+        <h2 id="how-heading">How it works</h2>
+        <p>[Architecture overview. A diagram will go here in HW3.]</p>
+      </section>
+
+      <section aria-labelledby="tradeoffs-heading">
+        <h2 id="tradeoffs-heading">Challenges and trade-offs</h2>
+        <p>[One or two hard problems and the decisions I made.]</p>
+      </section>
+
+      <section aria-labelledby="change-heading">
+        <h2 id="change-heading">What I’d change</h2>
+        <p>[What I’d do differently next time.]</p>
+      </section>
+    </article>
+
+    <nav aria-label="More projects">
+      <ul>
+        <li><a href="habit-tracker.html">Previous: Habit Tracker</a></li>
+        <li><a href="../projects.html">All projects</a></li>
+        <li><a href="bioloop.html">Next: BioLoop</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="../contact.html">Email me</a></li>
+        <li><a href="../experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

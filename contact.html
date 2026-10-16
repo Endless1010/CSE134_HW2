@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Bowen Wu about software engineering internships and part-time roles.">
+  <meta name="author" content="Bowen Wu">
+  <title>Contact | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <p>I’m looking for software engineering internships and part-time roles. Send a message and I’ll get back to you.</p>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Send a message</h2>
+      <!-- The form is not wired up yet: HW2 does not allow scripting. -->
+      <!-- Each <div> groups a label with its field; no other element fits that job. -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your details</legend>
+          <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your message</legend>
+          <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+          </div>
+        </fieldset>
+        <p><button type="submit">Send message</button></p>
+      </form>
+
+      <dialog id="message-sent" aria-labelledby="sent-heading">
+        <h3 id="sent-heading">Message sent</h3>
+        <p>Thanks for reaching out. I’ll reply within a few days.</p>
+        <form method="dialog">
+          <button type="submit">Close</button>
+        </form>
+      </dialog>
+    </section>
+
+    <section aria-labelledby="elsewhere-heading">
+      <h2 id="elsewhere-heading">Elsewhere</h2>
+      <!-- TODO: replace with your real email and profile links -->
+      <ul>
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      </ul>
+      <p>Based in San Diego, California.</p>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-117.30%2C32.70%2C-117.05%2C32.92&amp;layer=mapnik" title="Map of San Diego, California" width="480" height="300" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

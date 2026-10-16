@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bowen Wu's leadership, work experience, education, and technical skills.">
+  <meta name="author" content="Bowen Wu">
+  <title>Experience | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html" aria-current="page">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Experience</h1>
+    <p><a href="resume.pdf" type="application/pdf">Download my full résumé (PDF)</a></p>
+
+    <section aria-labelledby="roles-heading">
+      <h2 id="roles-heading">Leadership and work</h2>
+      <!-- TODO: add dates and concrete accomplishments to each role -->
+      <article>
+        <h3>President, Computer Science Club</h3>
+        <p>Mt. San Antonio College</p>
+        <p>Led the club, planned events, and helped newer members get started with programming.</p>
+      </article>
+      <article>
+        <h3>Math Tutor, Grades K–6</h3>
+        <p>Broke down math concepts for young students and adjusted my explanations to each learner.</p>
+      </article>
+      <article>
+        <h3>Crew Member</h3>
+        <p>Chipotle Mexican Grill</p>
+        <p>Served customers during rush hours, which meant clear communication and teamwork under pressure.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul>
+        <li><strong>University of California, San Diego</strong>: B.S. Computer Science <!-- TODO: expected graduation --></li>
+        <li><strong>Mt. San Antonio College</strong>: transferred to UCSD</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <h3>Languages</h3>
+      <tech-stack>
+        <span>Python</span> <span>TypeScript</span> <span>JavaScript</span> <span>Java</span> <span>SQL</span> <span>HTML</span>
+      </tech-stack>
+      <h3>Frameworks and tools</h3>
+      <tech-stack>
+        <span>React</span> <span>FastAPI</span> <span>PostgreSQL</span> <span>Git</span> <span>Jest</span> <span>Chrome DevTools</span>
+      </tech-stack>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

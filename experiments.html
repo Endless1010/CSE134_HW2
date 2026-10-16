@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demonstrations of the template, audio, video, source, and canvas elements, plus MathML.">
+  <meta name="author" content="Bowen Wu">
+  <title>HTML experiments | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>HTML experiments</h1>
+    <p>This page demonstrates HTML elements that don’t fit naturally on the rest of my portfolio.</p>
+
+    <section aria-labelledby="template-heading">
+      <h2 id="template-heading">The template element</h2>
+      <p>The <code>template</code> below holds the markup for a project card. Browsers parse it but don’t render it, so nothing appears here. In later assignments JavaScript will clone it to build the projects list.</p>
+      <template id="project-card-template">
+        <article>
+          <h3>Project name</h3>
+          <p>Short project summary.</p>
+          <tech-stack><span>Technology</span></tech-stack>
+          <a href="projects.html">Read the case study</a>
+        </article>
+      </template>
+    </section>
+
+    <section aria-labelledby="audio-heading">
+      <h2 id="audio-heading">The audio and source elements</h2>
+      <p>A three-second test tone. Two <code>source</code> elements give the browser a choice of MP3 or Ogg, and it plays the first one it supports.</p>
+      <audio controls preload="metadata">
+        <source src="media/tone.mp3" type="audio/mpeg">
+        <source src="media/tone.ogg" type="audio/ogg">
+        Your browser doesn’t support HTML audio. <a href="media/tone.mp3">Download the MP3</a>.
+      </audio>
+    </section>
+
+    <section aria-labelledby="video-heading">
+      <h2 id="video-heading">The video and source elements</h2>
+      <p>A short placeholder clip that will be replaced with a BioLoop screen recording. The WebM version is listed first because it’s usually smaller; MP4 is the fallback.</p>
+      <video controls width="640" height="360" preload="metadata" poster="images/demo-poster.jpg">
+        <source src="media/demo.webm" type="video/webm">
+        <source src="media/demo.mp4" type="video/mp4">
+        Your browser doesn’t support HTML video. <a href="media/demo.mp4">Download the MP4</a>.
+      </video>
+    </section>
+
+    <section aria-labelledby="canvas-heading">
+      <h2 id="canvas-heading">The canvas element</h2>
+      <p>A bar chart drawn with a few lines of JavaScript, which the assignment allows for this element.</p>
+      <canvas id="demo-canvas" width="320" height="160">A bar chart with four bars of increasing height.</canvas>
+      <script>
+        const ctx = document.getElementById('demo-canvas').getContext('2d');
+        [40, 70, 100, 130].forEach((h, i) => {
+          ctx.fillStyle = '#1F4FD1';
+          ctx.fillRect(20 + i * 75, 150 - h, 50, h);
+        });
+      </script>
+    </section>
+
+    <section aria-labelledby="custom-heading">
+      <h2 id="custom-heading">Custom elements</h2>
+      <p><code>&lt;tech-stack&gt;</code> is a CSS-only custom element that groups the technologies used in a project. It appears on the project pages:</p>
+      <tech-stack>
+        <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+      </tech-stack>
+      <p><code>&lt;hello-world&gt;</code> prints “Hello World!” to the browser console without changing the page. It’s in the footer of every page; open the developer tools console to see it.</p>
+    </section>
+
+    <section aria-labelledby="mathml-heading">
+      <h2 id="mathml-heading">Extra credit: MathML</h2>
+      <p>Einstein’s mass–energy equivalence:</p>
+      <math display="block">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </math>
+      <p>MathML has been part of the HTML standard for years, but developers couldn’t rely on it until recently because browser support was patchy. Firefox has supported it for a long time and Safari supported much of it, but Chrome only shipped it briefly in 2013 before removing it. Chromium-based browsers, including Chrome and Edge, didn’t support MathML Core until version 109 in January 2023. Until then, developers needed libraries like MathJax or images of equations to display math reliably for most users.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>

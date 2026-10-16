@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects and coursework by Bowen Wu, including BioLoop, a habit tracker, and MemeBro.">
+  <meta name="author" content="Bowen Wu">
+  <title>Projects | Bowen Wu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/custom-elements.css">
+  <style>
+    /* HW2 allows borders only, to show the base page structure. */
+    body > header, body > main, body > footer { border: 1px solid; }
+  </style>
+  <script src="js/hello-world.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><strong>Bowen Wu</strong></a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" type="application/pdf">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Projects</h1>
+    <p>Each project has its own page explaining the problem, what I built, the trade-offs I made, and what I’d change next time.</p>
+
+    <section aria-labelledby="personal-heading">
+      <h2 id="personal-heading">Personal projects</h2>
+
+      <article>
+        <h3><a href="projects/bioloop.html">BioLoop</a></h3>
+        <p>Nutrition and health tracking app. Rebuilt from a Streamlit and SQLite prototype into a FastAPI and React app backed by PostgreSQL.</p>
+        <tech-stack>
+          <span>FastAPI</span> <span>React</span> <span>TypeScript</span> <span>PostgreSQL</span> <span>Gemini</span>
+        </tech-stack>
+      </article>
+
+      <article>
+        <h3><a href="projects/habit-tracker.html">Habit Tracker</a></h3>
+        <p>A full-stack habit tracking app.</p>
+        <!-- TODO: add a <tech-stack> for this project -->
+      </article>
+
+      <article>
+        <h3><a href="projects/memebro.html">MemeBro</a></h3>
+        <p>An AI-powered meme generator.</p>
+        <!-- TODO: add a <tech-stack> for this project -->
+      </article>
+    </section>
+
+    <section aria-labelledby="coursework-heading">
+      <h2 id="coursework-heading">Coursework highlights</h2>
+      <p>Write-ups only. Course code stays private to respect academic integrity.</p>
+      <ul>
+        <li><b>CSE 120, Operating Systems:</b> extended the <i>Nachos</i> teaching OS with system calls and demand-paged virtual memory. On my team I owned part of the virtual memory work and wrote the test suite.</li>
+        <li><b>CSE 150B, Artificial Intelligence:</b> built game-playing agents using minimax, expectimax, Monte Carlo tree search, and Q-learning.</li>
+        <li><b>CSE 110, Software Engineering:</b> worked in an Agile team, practiced refactoring, and documented decisions with architecture decision records.</li>
+        <li><b>CSE 134B, Web Client Languages:</b> this site, built up from plain semantic HTML.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <!-- TODO: replace with your real GitHub and LinkedIn profile URLs -->
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="contact.html">Email me</a></li>
+        <li><a href="experiments.html">HTML experiments</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Bowen Wu. Built with semantic HTML for CSE 134B.</small></p>
+    <hello-world></hello-world>
+  </footer>
+</body>
+</html>
