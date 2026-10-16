@@ -20,7 +20,7 @@ css/custom-elements.css    Styles for <tech-stack> only
 js/hello-world.js          <hello-world> custom element
 images/  media/            Placeholder images, audio and video
 favicon.svg
-resume.pdf                 ADD THIS: your résumé (linked from every page)
+resume.pdf                Resume
 ```
 
 ## Custom elements
